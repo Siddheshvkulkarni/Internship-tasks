@@ -1,0 +1,57 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #ffffff;
+}
+
+h1 {
+    text-align:center;
+    color: #333;
+    background-color: #ffffff;
+    border: 2px solid #d9534f;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+
+.timetable-container {
+    display: flex;
+    justify-content: center;
+}
+
+.timetable {
+    border-collapse: collapse;
+    width: 90%;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+  
+}
+
+.timetable th,
+.timetable td {
+    border: 1px solid #b3b3b3;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.timetable th {
+    background-color: #ffb3b3;
+    color: #000;
+    font-weight: bold;
+}
+
+.timetable td {
+    color: #333;
+}
+
+
+.timetable tbody tr:nth-child(odd) {
+    background-color: #fdf2f2;
+}
+
+.timetable tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}

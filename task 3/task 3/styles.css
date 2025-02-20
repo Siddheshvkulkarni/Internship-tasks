@@ -1,0 +1,120 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f5;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff;
+    border: 1px solid #602a2a;
+    border-radius: 10px;
+}
+
+Table Styling
+.periodic-table {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+    border-spacing: 0;
+   
+   
+    
+}
+
+
+.periodic-table td .element {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.periodic-table {
+    border-collapse: collapse; 
+    border-spacing: 0;
+    width: 100%; 
+   
+    
+}
+
+.periodic-table td, .periodic-table th {
+    border: 1px solid #f50d0d; 
+    padding: 0;
+    text-align: center;
+    aspect-ratio: 1 / 1; 
+}
+
+
+.blank-cell {
+   border: 1px solid rgb(15, 230, 216);
+    background-color: transparent;
+    border-color: white;
+    
+   
+}
+
+
+
+
+
+
+.element.light {
+    background-color: #e6a8e2;
+}
+.element.lightPurple {
+    background-color: #d792d4;
+}
+.element.lightBlue {
+    background-color: #96dbec;
+}
+.element.LightOrange {
+    background-color: #ffccbc;
+}
+.element.LightYellow {
+    background-color: #e4dea7;
+}
+
+.element.Brownorange {
+    background-color: #efab45;
+}
+.element.LemonGreen {
+    background-color: #d7f3ae;
+}
+.element.DarkOrange {
+    background-color: #e68c42;
+    
+}
+
+.element.Blue {
+    background-color: #25a9dd;
+}
+
+.element.yellow {
+    background-color: #ecdc53;
+}
+
+.element.red {
+    background-color: #ffcdd2;
+}
+
+
+
+.range {
+    font-style: italic;
+    background-color:#efe0e0;
+}
+
+
+.periodic-table .element.light {
+    background-color: #eb9cef;
+}
+
+.periodic-table .element.light {
+    background-color: #efe0e0; 
+}
