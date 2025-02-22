@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+        }
+        .container {
+            max-width: 500px;
+            background: white;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .form-group {
+            display: grid;
+            grid-template-columns: 1fr;
+            margin-bottom: 10px;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .radio-group, .checkbox-group {
+            display: flex;
+            gap: 10px;
+        }
+        .button-group {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        button {
+            background-color: grey;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        button:hover {
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Registration Form</h1>
+        <form>
+            <div class="form-group">
+                <label for="firstName">Enter your first name</label>
+                <input type="text" id="firstName" name="firstName" required placeholder="Enter your first name">
+            </div>
+            <div class="form-group">
+                <label for="lastName">Enter your last name</label>
+                <input type="text" id="lastName" name="lastName" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Enter your password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="rePassword">Re-enter your password</label>
+                <input type="password" id="rePassword" name="rePassword" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Enter your email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="mobile">Enter your mobile</label>
+                <input type="tel" id="mobile" name="mobile" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Enter your address</label>
+                <textarea id="address" name="address" rows="5" required></textarea>
+            </div>
+            <div class="form-group">
+                <label>Select your gender</label>
+                <div class="radio-group">
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Select your hobbies</label>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="hobby1" name="hobbies[]" value="hobby1">
+                    <label for="hobby1">Cricket</label>
+                    <input type="checkbox" id="hobby2" name="hobbies[]" value="hobby2">
+                    <label for="hobby2">Drawing</label>
+                    <input type="checkbox" id="hobby3" name="hobbies[]" value="hobby3">
+                    <label for="hobby3">Hockey</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="dob">Select your DOB</label>
+                <input type="text" id="dob" name="dob" placeholder="dd-mm-yyyy" required>
+            </div>
+            <div class="form-group">
+                <label for="country">Select your country</label>
+                <select id="country" name="country" required>
+                    <option value="">Select your country</option>
+                    <option value="india">India</option>
+                    <option value="usa">USA</option>
+                    <option value="canada">Canada</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="picture">Upload your image</label>
+                <input type="file" id="picture" name="picture">
+            </div>
+            <div class="button-group">
+                <button type="submit">Save My Data</button>
+                <button type="reset">Reset Data</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
